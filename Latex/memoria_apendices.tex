@@ -16,6 +16,7 @@
 
 % Links
 \usepackage[colorlinks]{hyperref}
+\usepackage{bookmark}
 \hypersetup{
 	allcolors = {red}
 }
@@ -471,6 +472,7 @@ keywords separated by commas.
 \clearpage
 
 \listoftables
+
 \clearpage
 
 \mainmatter
@@ -487,6 +489,7 @@ keywords separated by commas.
 \include{./tex/6_Trabajos_relacionados}
 \include{./tex/7_Conclusiones_Lineas_de_trabajo_futuras}
 
+\cleardoublepage
 
 %\renewcommand\chaptername{Anexo}
 %\renewcommand\thechapter{\Roman{chapter}}
@@ -494,7 +497,9 @@ keywords separated by commas.
 
 % Añadir entrada en el índice: Anexos
 \appendix
+\phantomsection
 \addcontentsline{toc}{part}{Apéndices}
+
 \part*{Apéndices}
 
 \include{./tex/A_Plan_proyecto}
